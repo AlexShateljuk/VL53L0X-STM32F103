@@ -13,7 +13,7 @@ For the I²C, UART and timing my own libraries are used. The following files are
 You can find them [here](https://github.com/MarcelMG/STM32F103C8T6).
 
 ### Hardware
-A [VL53L0X carrier](https://www.pololu.com/product/2490) can be purchased from Pololu's website.  Before continuing, careful reading of the [product page](https://www.pololu.com/product/2490) as well as the VL53L0X datasheet is recommended.
+A [VL53L0X breakout board](https://www.pololu.com/product/2490) can be purchased from Pololu's website.
 
 Make the following connections between the STM32F103C8T6 and the VL53L0X board:
 
@@ -21,7 +21,8 @@ Make the following connections between the STM32F103C8T6 and the VL53L0X board:
     -------   -------------
         3V3 - VIN
         GND - GND
+        PB6 - SCL
         PB7 - SDA
-        PB5 - XSHUT
-
+        PB5 - XSHUT (optional)
+and don't forget the pullup resistors on SDA and SCL.
 
