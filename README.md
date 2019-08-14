@@ -2,7 +2,15 @@
 
 This is a C port of [pololu's Arduino library](https://github.com/pololu/vl53l0x-arduino) for the ST VL53L0X time of flight sensor. It is targeted at the STM32F103 microcontroller but can be modified to be used with another µC.
 
-For the I²C, UART and timing my own libraries are used. You can find them [here](https://github.com/MarcelMG/STM32F103C8T6).
+For the I²C, UART and timing my own libraries are used. The following files are needed:
+* usart1.h
+* usart1.c
+* init.h
+* init.c
+* i2c.h
+* i2c.c
+
+You can find them [here](https://github.com/MarcelMG/STM32F103C8T6).
 
 ### Hardware
 A [VL53L0X carrier](https://www.pololu.com/product/2490) can be purchased from Pololu's website.  Before continuing, careful reading of the [product page](https://www.pololu.com/product/2490) as well as the VL53L0X datasheet is recommended.
